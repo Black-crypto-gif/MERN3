@@ -10,7 +10,7 @@ const Signup = () =>{
 	const handleSubmit = async (e) =>{
 		e.preventDefault();
 		await signup(email, password);
-		if(!signup.ok){
+		if(!signup){
 			const Toast = Swal.mixin({
 				toast: true,
 				position: 'top-end',
@@ -27,7 +27,7 @@ const Signup = () =>{
 				icon: 'error',
 				title: `${error}`
 			})
-		}
+		}else{
 			var str= email;
 			var nameMatch = str.match(/^([^@]*)@/);
 			var username = nameMatch ? nameMatch[1] : null;
@@ -47,6 +47,7 @@ const Signup = () =>{
 				icon: 'success',
 				title: `${username} Sign up to the data base `
 			})
+		}
 	}
  
 	return(
