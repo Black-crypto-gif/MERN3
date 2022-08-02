@@ -1,0 +1,184 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@600&display=swap');
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+input:focus{
+  background: rgba(0, 148, 0, 0.438) ;
+  outline: 1px white solid;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+} 
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+/*footer*/
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.6em;
+  padding: 2.5rem;
+  background-color: #333;
+  color: #ddd;
+  margin-top: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+.class1{
+  padding: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+}
+.class2{
+  padding: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+}
+.class3{
+  padding: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+}
+.btn-contact{
+  width: 100%;
+  padding: .8rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-style: italic;
+  background-color: #e7195a;
+  color: white;
+  transition: 0.5s;
+}
+.btn-contact:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+/* auth forms */
+form.signup, form.login{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 7px;
+}
+
+nav button {
+  background: #1aac83;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  font-size: 1em;
+}
