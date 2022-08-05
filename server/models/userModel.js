@@ -13,7 +13,7 @@ const userSchema = new Schema({
     password:{
         type: String,
         required:true
-    }
+    },
 })
 
 // static signup method :
